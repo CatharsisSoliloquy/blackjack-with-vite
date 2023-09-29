@@ -1,10 +1,10 @@
 import _ from "underscore";
+import { crearDeck } from "./usecases/crear-deck";
+
 // import { crearDeck as crearNuevoDeck } from "./usecases/crear-deck";
 // import crearDeck, { miNombre } from "./usecases/crear-deck";
-
 // import cualquierNombre from "./usecases/crear-deck";
 
-import { crearDeck } from "./usecases/crear-deck";
 /**
 /**
  * 2C = Two of Clubs
@@ -31,6 +31,8 @@ const divCartasComputadora = document.querySelector("#computadora-cartas");
 const puntosHTML = document.querySelectorAll("small");
 
 deck = crearDeck(tipos, especiales);
+
+console.log(deck);
 
 // Esta función me permite tomar una carta
 const pedirCarta = () => {
