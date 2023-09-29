@@ -4,6 +4,7 @@ import {
   valorCarta,
   pedirCarta,
   turnoComputadora,
+  crearCartaHTML,
 } from "./usecases";
 //! Se creo un export principal
 // import { crearDeck } from "./usecases/crear-deck";
@@ -49,11 +50,8 @@ btnPedir.addEventListener("click", () => {
 
   puntosJugador = puntosJugador + valorCarta(carta);
   puntosHTML[0].innerText = puntosJugador;
-
-  // <img class="carta" src="assets/cartas/2C.png">
-  const imgCarta = document.createElement("img");
-  imgCarta.src = `assets/cartas/${carta}.png`; //3H, JD
-  imgCarta.classList.add("carta");
+  //!refactorizacion
+  const imgCarta = crearCartaHTML(carta);
   divCartasJugador.append(imgCarta);
 
   if (puntosJugador > 21) {
