@@ -1,7 +1,10 @@
 import _ from "underscore";
-import { crearDeck } from "./usecases/crear-deck";
-import { pedirCarta } from "./usecases/pedir-carta";
-import { valorCarta } from "./usecases/valor-carta";
+import { crearDeck, valorCarta, pedirCarta } from "./usecases";
+//! Se creo un export principal
+// import { crearDeck } from "./usecases/crear-deck";
+// import { pedirCarta } from "./usecases/pedir-carta";
+// import { valorCarta } from "./usecases/valor-carta";
+//! ----
 // import { crearDeck as crearNuevoDeck } from "./usecases/crear-deck";
 // import crearDeck, { miNombre } from "./usecases/crear-deck";
 // import cualquierNombre from "./usecases/crear-deck";
